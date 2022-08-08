@@ -1,0 +1,25 @@
+version: '3'
+services:
+  servera:
+    build: ./servera
+    ports:
+      - "8001:8000" 
+
+  serverb:
+    build: ./serverb
+    ports:
+      - "8002:8000"   
+
+  serverc:
+    build: ./serverc
+    ports:
+      - "8003:8000" 
+
+  nginx:
+    build: ./nginx
+    ports:
+      - 8080:80
+    depends_on:
+      - servera
+      - serverb
+      - serverc
