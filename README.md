@@ -1,5 +1,5 @@
 # Load Balancing with docker and nginx
-### Whate is load balancer
+### What is load balancer
 ![](https://i.imgur.com/JHkm5hc.png)
 Load balancer is just like a router, it efficiently distributing incoming network traffic and also the method to solve high concurrency problem. In this article, I will use Nginx and docker to build load balancer, hope you guys will like it.
 
